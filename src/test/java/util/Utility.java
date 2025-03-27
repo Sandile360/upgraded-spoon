@@ -20,11 +20,4 @@ public class Utility {
         return property.get(key).toString();
     }
 
-    public static String fetchTestData(String key) throws IOException {
-        FileInputStream file = new FileInputStream("/home/sandile/Desktop/github/data-driven-framework/src/test/java/config/testData.properties");
-        Properties property = new Properties();
-        property.load(file);
-        return property.get(key).toString();
-    }
-
 }
